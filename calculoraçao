@@ -1,0 +1,38 @@
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp20
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double gato1, gato2, pkg, consumo, sobra, pg;
+
+            Console.WriteLine("Cálculo de sobra da ração dos gatos");
+            Console.WriteLine("Informe quantos kg de ração você comprou: ");
+            pkg = double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe quantas gramas de ração o gato 1 consome no dia: ");
+            gato1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe quantas gramas de ração o gato 2 consome no dia: ");
+            gato2 = double.Parse(Console.ReadLine());
+
+            pg = pkg * 1000;
+            consumo = (gato1 + gato2) * 5;
+            sobra = pg - consumo;
+
+            Console.WriteLine($"Quantidade de ração que sobrou: {sobra}");
+            Console.ReadKey();
+
+
+        }
+
+    }
+}
+
+*/
+
