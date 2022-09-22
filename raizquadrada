@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        { int num;
+            double quad, raiz;
+
+            Console.WriteLine("Digite um número positivo maior que zero: ");
+            num = int.Parse(Console.ReadLine());
+
+            quad = num * num;
+            raiz = Math.Sqrt(num);
+
+            if (num > 0)
+            {
+                Console.WriteLine($"O número digitado ao quadrado é: {quad} ");
+                Console.WriteLine($"a raiz do número digitado é: {raiz,0:f2} ");
+            }
+            else 
+            {
+                Console.WriteLine($"Digite um número válido.");
+            }
+            Console.ReadKey();
+        }
+
+    }
+
+}
